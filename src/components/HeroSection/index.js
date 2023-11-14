@@ -13,7 +13,7 @@ import {
     TextLoop,
     Title
 } from './HeroStyle'
-import HeroImg from '../../images/HeroImage.jpg'
+import HeroImg from '../../images/knapkynIcon.png'
 import Typewriter from 'typewriter-effect';
 import {Bio} from '../../data/constants';
 
