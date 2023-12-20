@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e1d0061-5ae9-46f7-afa6-dbb415557c46" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/EducationCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/EducationCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/ExperienceCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ExperienceCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/ProjectCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ProjectCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Education/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Education/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/HeroStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/HeroStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectDetails/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Skills/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Skills/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
-    </list>
+    <list default="true" id="6e1d0061-5ae9-46f7-afa6-dbb415557c46" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +83,7 @@
       <workItem from="1703028673033" duration="1090000" />
       <workItem from="1703031444767" duration="304000" />
       <workItem from="1703032500820" duration="255000" />
-      <workItem from="1703032879612" duration="16763000" />
+      <workItem from="1703032879612" duration="17060000" />
     </task>
     <servers />
   </component>
