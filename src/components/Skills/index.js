@@ -35,7 +35,7 @@ margin-top: 20px;
 margin-top: 12px;
       font-size: 32px;
   }
-`;
+`
 
 export const Desc = styled.div`
     font-size: 18px;
@@ -45,7 +45,7 @@ export const Desc = styled.div`
     @media (max-width: 768px) {
         font-size: 16px;
     }
-`;
+`
 
 const SkillsContainer = styled.div`
   width: 100%;
@@ -60,8 +60,8 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
-  border: 0.1px solid #9EE493; /* Mint Green border color */
-  box-shadow: rgba(158, 228, 147, 0.4) 0px 4px 24px; /* Mint Green shadow color */
+  border: 0.1px solid ${({ theme }) => theme.card_light}; /* Mint Green border color */
+  box-shadow: ${({ theme }) => theme.primary} 0px 4px 24px; /* Mint Green shadow color */
   border-radius: 16px;
   padding: 18px 36px;
 
@@ -74,7 +74,7 @@ const Skill = styled.div`
     max-width: 330px;
     padding: 10px 36px;
   }
-`;
+`
 
 const SkillTitle = styled.h2`
   font-size: 28px;
@@ -118,19 +118,18 @@ const SkillImage = styled.img`
   height: 24px;
 `
 
-
 const Skills = () => {
-    return (
+  return (
         <Container id="skills">
             <Wrapper>
                 <Title>Skills</Title>
                 <SkillsContainer>
                     {skills.map((skill) => (
-                        <Skill>
+                        <Skill key={skill.title}>
                             <SkillTitle>{skill.title}</SkillTitle>
                             <SkillList>
                                 {skill.skills.map((item) => (
-                                    <SkillItem>
+                                    <SkillItem key={item.name}>
                                         <SkillImage src={item.image}/>
                                         {item.name}
                                     </SkillItem>
@@ -142,7 +141,7 @@ const Skills = () => {
                 </SkillsContainer>
             </Wrapper>
         </Container>
-    )
+  )
 }
 
 export default Skills

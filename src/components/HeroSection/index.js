@@ -1,24 +1,24 @@
 import React from 'react'
 import HeroBGAnimation from '../HeroBGAnimation'
 import {
-    HeroBg,
-    HeroContainer,
-    HeroInnerContainer,
-    HeroLeftContainer,
-    HeroRightContainer,
-    Img,
-    ResumeButton,
-    Span,
-    SubTitle,
-    TextLoop,
-    Title
+  HeroBg,
+  HeroContainer,
+  HeroInnerContainer,
+  HeroLeftContainer,
+  HeroRightContainer,
+  Img,
+  ResumeButton,
+  Span,
+  SubTitle,
+  TextLoop,
+  Title
 } from './HeroStyle'
 import HeroImg from '../../images/HeroImage.jpg'
-import Typewriter from 'typewriter-effect';
-import {Bio} from '../../data/constants';
+import Typewriter from 'typewriter-effect'
+import { Bio } from '../../data/constants'
 
 const HeroSection = () => {
-    return (
+  return (
         <div id="about">
             <HeroContainer>
                 <HeroBg>
@@ -32,9 +32,9 @@ const HeroSection = () => {
                             <Span>
                                 <Typewriter
                                     options={{
-                                        strings: Bio.roles,
-                                        autoStart: true,
-                                        loop: true,
+                                      strings: Bio.roles,
+                                      autoStart: true,
+                                      loop: true
                                     }}
                                 />
                             </Span>
@@ -51,7 +51,7 @@ const HeroSection = () => {
 
             </HeroContainer>
         </div>
-    )
+  )
 }
 
 export default HeroSection

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -15,7 +15,7 @@ export const HeroContainer = styled.div`
   z-index: 1;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%,70% 95%, 0 100%);
-`;
+`
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -34,12 +34,12 @@ export const HeroBg = styled.div`
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-
+ 
   @media (max-width: 960px) {
     justify-content: center;
     padding: 0 0px;
   }
-`;
+`
 
 export const HeroInnerContainer = styled.div`
   position: relative;
@@ -109,7 +109,7 @@ export const Img = styled.img`
     max-width: 280px;
     max-height: 280px;
   }
-`;
+`
 
 export const Title = styled.div`
   font-weight: 700;
@@ -125,7 +125,7 @@ export const Title = styled.div`
     line-height: 48px;
     margin-bottom: 8px;
   }
-`;
+`
 
 export const TextLoop = styled.div`
   font-weight: 600;
@@ -143,12 +143,13 @@ export const TextLoop = styled.div`
     margin-bottom: 16px;
   }
 
-`;
+`
 
+// typewriter text color
 export const Span = styled.span`
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.button};
   cursor: pointer;
-`;
+`
 
 export const SubTitle = styled.div`
   font-size: 20px;
@@ -165,7 +166,7 @@ export const SubTitle = styled.div`
     font-size: 16px;
     line-height: 32px;
   }
-`;
+`
 
 export const ResumeButton = styled.a`
   -webkit-appearance: button;
@@ -182,12 +183,13 @@ export const ResumeButton = styled.a`
   font-size: 20px;
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
-  background: ${({ theme }) => theme.primary}; /* Mint Green background */
+  background: ${({ theme }) => theme.primary};
   box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
 
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
+      background: ${({ theme }) => theme.button};
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
     filter: brightness(1);
   }
@@ -196,6 +198,4 @@ export const ResumeButton = styled.a`
     padding: 12px 0;
     font-size: 18px;
   }
-`;
-
-
+`

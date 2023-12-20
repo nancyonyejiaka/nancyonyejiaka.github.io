@@ -1,5 +1,5 @@
-import React from 'react';
-import { Div } from './HeroBGAnimationStyle';
+import React from 'react'
+import { Div } from './HeroBGAnimationStyle'
 const HeroBGAnimation = () => (
     <Div>
         <svg
@@ -360,6 +360,6 @@ const HeroBGAnimation = () => (
             </defs>
         </svg>
     </Div>
-);
+)
 
-export default HeroBGAnimation;
+export default HeroBGAnimation

@@ -1,42 +1,42 @@
 import React from 'react'
 import {
-    ButtonContainer,
-    GitHubButton,
-    MobileIcon,
-    MobileLink,
-    MobileMenu,
-    Nav,
-    NavBarContainer,
-    NavItems,
-    NavLink,
-    NavLogo,
-    Span
+  ButtonContainer,
+  GitHubButton,
+  MobileIcon,
+  MobileLink,
+  MobileMenu,
+  Nav,
+  NavBarContainer,
+  NavItems,
+  NavLink,
+  NavLogo,
+  Span
 } from './NavBarStyle'
-import EmojiNatureIcon from '@mui/icons-material/EmojiNature';
-import {FaBars} from 'react-icons/fa';
-import {Bio} from '../../data/constants';
-import {useTheme} from 'styled-components';
+import EmojiNatureIcon from '@mui/icons-material/EmojiNature'
+import { FaBars } from 'react-icons/fa'
+import { Bio } from '../../data/constants'
+import { useTheme } from 'styled-components'
 
 const NavBar = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
-    const theme = useTheme()
-    return (
+  const [isOpen, setIsOpen] = React.useState(false)
+  const theme = useTheme()
+  return (
         <Nav>
             <NavBarContainer>
                 <NavLogo to='/'>
                     <a style={{
-                        display: "flex",
-                        alignItems: "center",
-                        color: "white",
-                        marginBottom: '20;',
-                        cursor: 'pointer'
+                      display: 'flex',
+                      alignItems: 'center',
+                      color: 'white',
+                      marginBottom: '20;',
+                      cursor: 'pointer'
                     }}>
                         <EmojiNatureIcon /> <Span>Nancy Onyeiaka</Span>
                     </a>
                 </NavLogo>
                 <MobileIcon>
                     <FaBars onClick={() => {
-                        setIsOpen(!isOpen)
+                      setIsOpen(!isOpen)
                     }}/>
                 </MobileIcon>
                 <NavItems>
@@ -52,32 +52,32 @@ const NavBar = () => {
                 {
                     isOpen &&
                     <MobileMenu isOpen={isOpen}>
-                        <MobileLink href="#about" onClick={() => {setIsOpen(!isOpen)}}>
+                        <MobileLink href="#about" onClick={() => { setIsOpen(!isOpen) }}>
                             About
                         </MobileLink>
                         <MobileLink href='#skills' onClick={() => {
-                            setIsOpen(!isOpen)
+                          setIsOpen(!isOpen)
                         }}>Skills</MobileLink>
                         <MobileLink href='#experience' onClick={() => {
-                            setIsOpen(!isOpen)
+                          setIsOpen(!isOpen)
                         }}>Experience</MobileLink>
                         <MobileLink href='#projects' onClick={() => {
-                            setIsOpen(!isOpen)
+                          setIsOpen(!isOpen)
                         }}>Projects</MobileLink>
                         <MobileLink href='#education' onClick={() => {
-                            setIsOpen(!isOpen)
+                          setIsOpen(!isOpen)
                         }}>Education</MobileLink>
                         <GitHubButton style={{
-                            padding: '10px 16px',
-                            background: `${theme.primary}`,
-                            color: 'white',
-                            width: 'max-content'
+                          padding: '10px 16px',
+                          background: `${theme.primary}`,
+                          color: 'white',
+                          width: 'max-content'
                         }} href={Bio.github} target="_blank">GitHub</GitHubButton>
                     </MobileMenu>
                 }
             </NavBarContainer>
         </Nav>
-    )
+  )
 }
 
 export default NavBar

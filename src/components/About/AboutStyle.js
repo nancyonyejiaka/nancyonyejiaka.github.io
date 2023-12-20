@@ -1,10 +1,9 @@
-import styled from 'styled-components';
-
+import styled from 'styled-components'
 
 export const SocialMediaIcons = styled.div`
   display: flex;
   margin-top: 1rem;
-`;
+`
 
 export const SocialMediaIcon = styled.a`
   display: inline-block;
@@ -15,4 +14,4 @@ export const SocialMediaIcon = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
-`;
+`

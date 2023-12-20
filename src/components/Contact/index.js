@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { Snackbar } from '@mui/material';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import emailjs from '@emailjs/browser'
+import { Snackbar } from '@mui/material'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
 const Container = styled.div`
 display: flex;
@@ -42,19 +41,18 @@ margin-top: 20px;
       margin-top: 12px;
       font-size: 32px;
   }
-`;
+`
 
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
-
+// const Desc = styled.div`
+//     font-size: 18px;
+//     text-align: center;
+//     max-width: 600px;
+//     color: ${({ theme }) => theme.text_secondary};
+//     @media (max-width: 768px) {
+//         margin-top: 12px;
+//         font-size: 16px;
+//     }
+// `
 
 const ContactForm = styled.form`
   width: 95%;
@@ -104,13 +102,12 @@ const ContactInputMessage = styled.textarea`
   }
 `
 
-
 export const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(180, 40%, 70%, 1); /* Mint Green */
-  background: linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%); /* Mint Green to Slightly Darker Green gradient */
+  background: hsla(180, 40%, 70%, 1); 
+  background: linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%); 
   background: -moz-linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%);
   background: -webkit-linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%);
   padding: 13px 16px;
@@ -127,28 +124,25 @@ export const ContactButton = styled.input`
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
     filter: brightness(1);
   }
-`;
-
-
+`
 
 const Contact = () => {
+  // hooks
+  const [open, setOpen] = React.useState(false)
+  const form = useRef()
 
-    //hooks
-    const [open, setOpen] = React.useState(false);
-    const form = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_p017fwc', 'template_9zm4zn2', form.current, 'Gi4wmNt763PXhotJT')
+      .then((result) => {
+        setOpen(true)
+        form.current.reset()
+      }, (error) => {
+        console.log(error.text)
+      })
+  }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_p017fwc', 'template_9zm4zn2', form.current, 'Gi4wmNt763PXhotJT')
-            .then((result) => {
-                setOpen(true);
-                form.current.reset();
-            }, (error) => {
-                console.log(error.text);
-            });
-    }
-
-    return (
+  return (
         <Container>
             <Wrapper>
                 <Title>Contact</Title>
@@ -163,13 +157,13 @@ const Contact = () => {
                 <Snackbar
                     open={open}
                     autoHideDuration={6000}
-                    onClose={()=>setOpen(false)}
+                    onClose={() => setOpen(false)}
                     message="Email sent successfully!"
                     severity="success"
                 />
             </Wrapper>
         </Container>
-    )
+  )
 }
 
 export default Contact

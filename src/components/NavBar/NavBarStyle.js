@@ -1,9 +1,9 @@
-import {Link as LinkR} from "react-router-dom";
-import styled from 'styled-components';
-import defaults from '../../themes/defaults';
+import { Link as LinkR } from 'react-router-dom'
+import styled from 'styled-components'
+// import defaults from '../../themes/defaults'
 
 export const Nav = styled.div`
-  background-color: ${({theme}) => theme.card_light};
+  background-color: ${({ theme }) => theme.card_light};
   height: 80px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ export const Nav = styled.div`
   @media (max-width: 960px) {
     trastion: 0.8s all ease;
   }
-`;
+`
 export const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ export const NavBarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
-`;
+`
 
 export const NavLogo = styled(LinkR)`
   width: 80%;
@@ -37,12 +37,12 @@ export const NavLogo = styled(LinkR)`
   @media (max-width: 640px) {
     padding: 0 0px;
   }
-`;
+`
 export const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
   font-size: 18px;
-`;
+`
 export const NavItems = styled.ul`
   width: 100%;
   display: flex;
@@ -55,7 +55,7 @@ export const NavItems = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const NavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
@@ -64,14 +64,13 @@ export const NavLink = styled.a`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.button};
   }
 
   &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
+    border-bottom: 2px solid ${({ theme }) => theme.button};
   }
-`;
-
+`
 
 export const GitHubButton = styled.a`
   border: 1.8px solid ${({ theme }) => theme.primary};
@@ -94,7 +93,7 @@ export const GitHubButton = styled.a`
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }
-`;
+`
 
 export const ButtonContainer = styled.div`
   width: 80%;
@@ -106,8 +105,7 @@ export const ButtonContainer = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
-
+`
 
 export const MobileIcon = styled.div`
   display: none;
@@ -166,7 +164,7 @@ export const MobileMenuLink = styled(LinkR)`
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
-`;
+`
 
 export const MobileMenuButton = styled.a`
   border: 1.8px solid ${({ theme }) => theme.primary};
@@ -187,9 +185,9 @@ export const MobileMenuButton = styled.a`
     background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
   }
-`;
+`
 
-export  const MobileLink = styled.a`
+export const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -202,7 +200,7 @@ export  const MobileLink = styled.a`
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
-`;
+`
 
 export const MobileNavLogo = styled(LinkR)`
   width: 80%;
@@ -214,4 +212,4 @@ export const MobileNavLogo = styled(LinkR)`
   @media (max-width: 640px) {
     padding: 0 0px;
   }
-`;
+`

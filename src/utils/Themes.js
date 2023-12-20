@@ -1,24 +1,24 @@
 export const darkTheme = {
-    bg: "#1C271C", // dark green
-    bgLight: "#1E271E", // forest green
-    primary: "#9EE493", // Mint Green
-    secondary: "#9EE493",
-    text_primary: "#F2F3F4", // white
-    text_secondary: "#D3D3D3", // Soft Gray
-    card: "#172717",
-    card_light: '#192719',
-    button: "#AFFFAF", // Coral Pink
-    white: "#FFFFFF",
-    black: "#000000",
-};
+  bg: '#16202A', // dark blue
+  bgLight: '#1C2A41', // lighter shade of dark blue
+  primary: '#4A90E2', // bright blue
+  secondary: '#50BFE6', // neon blue
+  text_primary: '#F2F3F4', // white
+  text_secondary: '#D3D3D3', // soft gray
+  card: '#1A2633', // dark blue for card
+  card_light: '#223A5E', // lighter blue for card
+  button: '#FF6AD5', // bright pink
+  white: '#FFFFFF',
+  black: '#000000'
+}
 
 export const lightTheme = {
-    bg: "#FFFFFF",
-    bgLight: "#F0F0F0",
-    primary: "#9EE493", // Mint Green
-    text_primary: "#111111",
-    text_secondary: "#48494A",
-    card: "#FFFFFF",
-    card_light: "#F2F3F4", // Soft White
-    button: "#AEEEEE", // Minty Blue
-};
+  bg: '#FFFFFF', // White
+  bgLight: '#F0F0F0', // Very light gray for a slightly differentiated background
+  primary: '#6EC1E4', // Light blue
+  text_primary: '#111111', // Almost black for primary text
+  text_secondary: '#48494A', // Dark gray for secondary text
+  card: '#FFFFFF', // White for cards
+  card_light: '#F2F3F4', // Soft white for lighter card areas
+  button: '#FFAEC8' // Soft pink for buttons
+}

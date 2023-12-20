@@ -78,7 +78,7 @@ const Image = styled.img`
     height: 50px;
     background-color: #000;
     border-radius: 10px;
-    margin-top: 4px;
+    margin-top: 4p;
     @media only screen and (max-width: 768px){
         height: 40px;
     }
@@ -89,7 +89,6 @@ const Body = styled.div`
     display: flex;
     flex-direction: column; 
 `
-
 
 const Name = styled.div`
     font-size: 18px;
@@ -127,10 +126,8 @@ const Grade = styled.div`
     }
 `
 
-
-
 const EducationCard = ({ education }) => {
-    return (
+  return (
         <Card>
             <Top>
                 <Image src={education.img} />
@@ -145,7 +142,7 @@ const EducationCard = ({ education }) => {
                 <Span>{education.desc}</Span>
             </Description>
         </Card>
-    )
+  )
 }
 
 export default EducationCard

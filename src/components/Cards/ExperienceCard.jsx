@@ -36,7 +36,7 @@ text-overflow: ellipsis;
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: rgba(158, 228, 147, 0.4) 0px 4px 24px; /* Mint Green shadow color */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -45,10 +45,10 @@ const Card = styled.div`
   flex-direction: column;
   gap: 12px;
   transition: all 0.3s ease-in-out;
-  border: 0.1px solid #9EE493; /* Mint Green border color */
+  border: 0.1px solid ${({ theme }) => theme.primary};
 
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: ${({ theme }) => theme.primary} 0px 4px 24px;
     transform: translateY(-5px);
   }
 
@@ -90,7 +90,6 @@ const Body = styled.div`
     flex-direction: column; 
 `
 
-
 const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
@@ -118,7 +117,6 @@ const Date = styled.div`
     }
 `
 
-
 const Skills = styled.div`
     width: 100%;
     display: flex;
@@ -141,10 +139,8 @@ const Skill = styled.div`
     }
 `
 
-
-
 const ExperienceCard = ({ experience }) => {
-    return (
+  return (
         <Card>
             <Top>
                 <Image src={experience.img} />
@@ -166,7 +162,7 @@ const ExperienceCard = ({ experience }) => {
                             <b>Skills:</b>
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
+                                    <Skill key={skill.name}>• {skill}</Skill>
                                 ))}
                             </ItemWrapper>
                         </Skills>
@@ -179,7 +175,7 @@ const ExperienceCard = ({ experience }) => {
                 </a>
             }
         </Card>
-    )
+  )
 }
 
 export default ExperienceCard

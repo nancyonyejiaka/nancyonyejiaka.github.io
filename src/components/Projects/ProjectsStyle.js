@@ -1,15 +1,26 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  background: linear-gradient(343.07deg, rgba(158, 228, 147, 0.06) 5.71%, rgba(158, 228, 147, 0) 64.83%); /* Mint Green gradient */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
-`;
+    ${({ theme }) => `
+    background: linear-gradient(
+      38.73deg, 
+      ${theme.bg} 0%, 
+      ${theme.bgLight} 50%
+    ),
+    linear-gradient(
+      141.27deg, 
+      ${theme.tertiary} 50%, 
+      ${theme.quaternary} 100%
+    );
+  `}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
+`
 
 export const Wrapper = styled.div`
     position: relative;
@@ -24,7 +35,7 @@ export const Wrapper = styled.div`
     @media (max-width: 960px) {
         flex-direction: column;
     }
-`;
+`
 
 export const Title = styled.div`
 font-size: 42px;
@@ -36,7 +47,7 @@ margin-top: 20px;
       margin-top: 12px;
       font-size: 32px;
   }
-`;
+`
 
 export const Desc = styled.div`
     font-size: 18px;
@@ -47,7 +58,7 @@ export const Desc = styled.div`
         margin-top: 12px;
         font-size: 16px;
     }
-`;
+`
 
 export const ToggleButtonGroup = styled.div`
     display: flex;
@@ -84,7 +95,6 @@ export const Divider = styled.div`
     background: ${({ theme }) => theme.primary};
 `
 
-
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -101,4 +111,4 @@ export const CardContainer = styled.div`
     // @media (max-width: 640px) {
     //     grid-template-columns: repeat(1, 1fr);
     // }
-`;
+`
