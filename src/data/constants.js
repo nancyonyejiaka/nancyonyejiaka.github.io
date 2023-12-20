@@ -148,68 +148,80 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: 'https://www.pngkey.com/png/detail/608-6088653_northeastern-university-usa-logo.png',
+    role: 'Teaching Assistant, Human Computer Interaction',
+    company: 'Northeastern University',
+    date: 'Dec 2023 - Present',
+    desc: '',
+    skills: [
+      'Figma',
+      'Axure RP 10',
+      'React',
+      'Mentoring',
+      ''
+    ]
+  },
+  {
+    id: 1,
     img: 'https://pbs.twimg.com/profile_images/1410639303194066945/pI7S3C6V_400x400.jpg',
     role: 'Algorithmic Traffic Acquisition Software Engineering Co-Op',
     company: 'CarGurus',
     date: 'Jan 2023 - Aug 2023',
-    desc: 'Implemented and improved algorithms for querying, analyzing, and publishing spend data.',
+    desc: '',
     skills: [
       'Kotlin',
       'MySQL',
       'Ruby',
       'Docker',
       'AWS',
-      'Typescript',
-      'React'
-    ]
-  },
-  {
-    id: 1,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqBFRW150j4vnLqY2kQo-QOYUkZEn7LJzncCVSkTmjg&s',
-    role: 'Software Engineering Fellow',
-    company: 'Hack.Diversity',
-    date: 'Jan 2023 - Apr 2023',
-    desc: 'Selected into 2023 fellowship cohort, a career leadership and workforce development program integrating ' +
-            'Boston’s innovation, corporate, civic, academic, and philanthropic pillars.',
-    skills: [
+      'TypeScript',
       'React',
-      'JavaScript',
-      'Material UI',
-      'CSS',
-      'HTML',
-      'GitHub'
+      'GitHub',
+      ''
     ]
   },
   {
     id: 2,
-    img: 'https://www.pngkey.com/png/detail/608-6088653_northeastern-university-usa-logo.png',
-    role: 'Discrete Structures Teaching Assistant',
-    company: 'Northeastern University Khoury College of Computer Sciences',
-    date: 'Sept 2022 - Jan 2023',
-    desc: 'Lead weekly office hours to guide students toward understanding complex topics in discrete mathematics ' +
-            'through a one-on-one method of teaching for over 800 students.',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqBFRW150j4vnLqY2kQo-QOYUkZEn7LJzncCVSkTmjg&s',
+    role: 'Software Engineering Fellow',
+    company: 'Hack.Diversity',
+    date: 'Jan 2023 - Apr 2023',
+    desc: '',
     skills: [
       'React',
       'JavaScript',
       'Material UI',
       'CSS',
       'HTML',
-      'GitHub'
+      'GitHub',
+      ''
     ]
   },
   {
     id: 3,
+    img: 'https://www.pngkey.com/png/detail/608-6088653_northeastern-university-usa-logo.png',
+    role: 'Teaching Assistant, Discrete Structures',
+    company: 'Northeastern University',
+    date: 'Sept 2022 - Jan 2023',
+    desc: '',
+    skills: [
+      'Discrete Mathematics',
+      'Mentoring',
+      ''
+    ]
+  },
+  {
+    id: 4,
     img: 'https://www.cffrv.org/wp-content/uploads/Logo-RCA.jpg',
     role: 'Recovery Support Specialist',
     company: 'Recovery Centers of America',
     date: 'Jul 2021 - Jan 2022',
-    desc: 'Provided evidence-based, trauma-informed therapy to groups of 25+ patients suffering from substance ' +
-            'abuse, and maintained patient records, including treatment reports, vital signs, and progress documentation ' +
-            'towards treatment goals for 240+ patients spanning 8 treatment units.',
+    desc: '',
     skills: [
       'Cultural Sensitivity',
       'Conflict Resolution',
-      'Client Advocacy'
+      'Client Advocacy',
+      ''
     ]
   }
 ]
@@ -218,7 +230,16 @@ export const education = [
   {
     id: 0,
     img: 'https://www.pngkey.com/png/detail/608-6088653_northeastern-university-usa-logo.png',
-    school: 'Northeastern University, Khoury College of Computer Sciences',
+    school: 'Northeastern University',
+    date: 'Sept 2022 - Present',
+    gpa: '3.85',
+    desc: 'PlusOne Program, Combined BS and MSCS',
+    degree: 'Master of Science in Computer Science'
+  },
+  {
+    id: 1,
+    img: 'https://www.pngkey.com/png/detail/608-6088653_northeastern-university-usa-logo.png',
+    school: 'Northeastern University',
     date: 'Sept 2019 - May 2024',
     gpa: '3.83',
     desc: "Honors Program. Dean's List Fall 2020 - Fall 2023.",
@@ -248,7 +269,7 @@ export const projects = [
       'Monte Carlo Tree Search',
       'Deep Q-Learning'
     ],
-    category: 'artifical intelligence',
+    category: 'ai',
     member: [
       {
         name: nancy.name,

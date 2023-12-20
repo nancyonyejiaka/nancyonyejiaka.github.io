@@ -82,7 +82,7 @@ const index = () => {
                             <TimelineItem key={experience.id}>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="primary" />
-                                    {index !== experiences.length - 1 &&
+                                    {index !== experiences.length + 1 &&
                                         <TimelineConnector key={experience.id}/>}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>

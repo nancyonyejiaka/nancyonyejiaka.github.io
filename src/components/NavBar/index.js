@@ -15,11 +15,27 @@ import {
 import EmojiNatureIcon from '@mui/icons-material/EmojiNature'
 import { FaBars } from 'react-icons/fa'
 import { Bio } from '../../data/constants'
-import { useTheme } from 'styled-components'
+import styled, { useTheme } from 'styled-components'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   const theme = useTheme()
+  const SocialMediaIcons = styled.div`
+  display: flex;
+`
+
+  const SocialMediaIcon = styled.a`
+  display: flex;
+  margin: 0 0.5rem;
+  font-size: 2.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.button};
+  }
+`
   return (
         <Nav>
             <NavBarContainer>
@@ -46,9 +62,10 @@ const NavBar = () => {
                     <NavLink href='#projects'>Projects</NavLink>
                     <NavLink href='#education'>Education</NavLink>
                 </NavItems>
-                <ButtonContainer>
-                    <GitHubButton href={Bio.github} target="_blank">GitHub</GitHubButton>
-                </ButtonContainer>
+                <SocialMediaIcons>
+                    <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
+                    <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+                </SocialMediaIcons>
                 {
                     isOpen &&
                     <MobileMenu isOpen={isOpen}>

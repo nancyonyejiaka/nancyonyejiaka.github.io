@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Button = styled.button`
     display: none;
     width: 100%;
@@ -96,7 +95,6 @@ const Date = styled.div`
     }
 `
 
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -124,9 +122,9 @@ const Avatar = styled.img`
   border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
-    return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
+const ProjectCards = ({ project, setOpenModal }) => {
+  return (
+        <Card onClick={() => setOpenModal({ state: true, project })}>
             <Image src={project.image}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
@@ -145,7 +143,7 @@ const ProjectCards = ({project,setOpenModal}) => {
             </Members>
             {/* <Button>View Project</Button> */}
         </Card>
-    )
+  )
 }
 
 export default ProjectCards

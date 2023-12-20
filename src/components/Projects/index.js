@@ -25,9 +25,9 @@ const Projects = ({ openModal, setOpenModal }) => {
                       : <ToggleButton value="fullstack" onClick={() => setToggle('fullstack')}>Fullstack Development</ToggleButton>
                     }
                     <Divider />
-                    {toggle === 'artificial intelligence'
-                      ? <ToggleButton active value="artificial intelligence" onClick={() => setToggle('artificial intelligence')}>Artificial Intelligence</ToggleButton>
-                      : <ToggleButton value="artificial intelligence" onClick={() => setToggle('artificial intelligence')}>Artificial Intelligence</ToggleButton>
+                    {toggle === 'ai'
+                      ? <ToggleButton active value="ai" onClick={() => setToggle('ai')}>Artificial Intelligence</ToggleButton>
+                      : <ToggleButton value="ai" onClick={() => setToggle('ai')}>Artificial Intelligence</ToggleButton>
                     }
                 </ToggleButtonGroup>
                 <CardContainer>
