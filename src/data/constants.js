@@ -17,6 +17,16 @@ const duncan = new Collaborator('Duncan Mayer',
   'https://github.com/duncanmayer',
   'https://www.linkedin.com/in/duncan-mayer-05a704177/')
 
+const surabhi = new Collaborator('Surabhi Keesara',
+  'https://avatars.githubusercontent.com/u/30560773?v=4',
+  'https://github.com/SurabhiKeesara',
+  'https://www.linkedin.com/in/surabhikeesara/')
+
+const anna = new Collaborator('Anna Brunkhorst',
+  'https://avatars.githubusercontent.com/u/90432899?v=4',
+  'https://github.com/AnnaBrunkhorst',
+  'https://www.linkedin.com/in/annabrunkhorst/')
+
 export const Bio = {
   name: 'Nancy Onyejiaka',
   roles: [
@@ -30,7 +40,7 @@ export const Bio = {
         'engineer impactful and effective software solutions.',
   github: nancy.github,
   resume:
-        'https://drive.google.com/file/d/1sb6COzQT1iwCafTiGjX-fOw_yxOgMNxR/view?usp=sharing',
+        'https://drive.google.com/file/d/1Rzmmdn_p_7zdfDCJred3VA2TvbB2KKZ1/view?usp=drive_link',
   linkedin: nancy.linkedin
 }
 
@@ -219,17 +229,61 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: 'Artificial Intelligence in Poker: A Comparative Analysis of Decision-Making Using Search Algorithms',
+    date: 'Sept 2023 - Dec 2023',
+    description:
+            'This study explores the effectiveness of three artificial intelligence algorithms — Expectiminimax, ' +
+        'Monte Carlo Tree Search (MCTS), and Deep Q-Learning — in the context of Texas Hold’em poker, a complex ' +
+        'and strategic game. The algorithms were tested against basic poker bots, focusing on win rates and net ' +
+        'winnings to assess their performance. The findings indicate that all three algorithms outperform the ' +
+        'simpler bots, with MCTS standing out for its adaptability and high win rate. Deep Q-Learning, while ' +
+        'needing more training episodes, shows promise for long-term strategic play. This research highlights the ' +
+        'potential of these AI methods in handling the uncertain and intricate nature of poker.',
+    image:
+            'https://raw.githubusercontent.com/nancyonyejiaka/ai-poker-algorithms/main/ai_in_poker.png',
+    tags: [
+      'Python',
+      'Research',
+      'Expectiminimax',
+      'Monte Carlo Tree Search',
+      'Deep Q-Learning'
+    ],
+    category: 'artifical intelligence',
+    member: [
+      {
+        name: nancy.name,
+        img: nancy.img,
+        linkedin: nancy.linkedin,
+        github: nancy.github
+      },
+      {
+        name: surabhi.name,
+        img: surabhi.img,
+        linkedin: surabhi.linkedin,
+        github: surabhi.github
+      },
+      {
+        name: anna.name,
+        img: anna.img,
+        linkedin: anna.linkedin,
+        github: anna.github
+      }
+    ],
+    github: 'https://github.com/nancyonyejiaka/ai-poker-algorithms',
+    report: 'https://drive.google.com/file/d/1Sdoy6_sTgB7SUggJntcnCcakbEgJQ15j/view?usp=drive_link'
+  },
+  {
+    id: 0,
     title: 'PantryPal',
     date: 'Aug 2023 - Present',
     description:
-            'PantryPal is a full-stack web application designed to assist users in making the most of their available ' +
-            'ingredients at home. Leveraging Kotlin for the backend and JavaScript for the frontend, PantryPal employs ' +
-            'RESTful APIs for ingredient management and recipe recommendations. This user-friendly platform allows users ' +
-            'to input their pantry items, receive personalized recipe suggestions, and efficiently plan meals based on ' +
-            'their existing ingredients. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, ' +
-            'Employee Credentials: #Email: testemployee@gmail.com #Password- 123@Testemployee',
+        'PantryPal is a full-stack web application designed to assist users in making the most of their available ' +
+        'ingredients at home. Leveraging Kotlin for the backend and JavaScript for the frontend, PantryPal employs ' +
+        'RESTful APIs for ingredient management and recipe recommendations. This user-friendly platform allows users ' +
+        'to input their pantry items, receive personalized recipe suggestions, and efficiently plan meals based on ' +
+        'their existing ingredients.',
     image:
-            'https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png',
+        'https://drive.google.com/file/d/16hH99ZcyqsYyoUsdDpe6Q2RB-N5f1_nk/preview',
     tags: [
       'Kotlin',
       'JavaScript',
@@ -251,13 +305,14 @@ export const projects = [
     id: 2,
     title: 'Image Processor',
     date: 'Sept 2022 - Nov 2022',
-    description: `
-This Image Processor is a fullstack desktop application designed to cater to both newcomers and seasoned artists alike. Seamlessly blending text-based and interactive GUI elements, this application offers an intuitive user experience, ensuring effortless image manipulation. From basic touch-ups to advanced effects, our platform provides a diverse range of image processing capabilities, all within a carefully designed interface.
-
-This application is architected using the Command Pattern to enhance modularity, alongside the use of HashMaps for rapid image data retrieval, ensuring both scalability and robustness in its design.
-
-Additionally, extensive JUnit tests confirm the application's functionality, guaranteeing the dependability and accuracy of its image editing capabilities and data management processes.
-`,
+    description: 'This Image Processor is a fullstack desktop application designed to cater to both newcomers and ' +
+        'seasoned artists alike. Seamlessly blending text-based and interactive GUI elements, this application ' +
+        'offers an intuitive user experience, ensuring effortless image manipulation. From basic touch-ups to ' +
+        'advanced effects, our platform provides a diverse range of image processing capabilities, all within a ' +
+        'carefully designed interface. This application is architected using the Command Pattern to enhance ' +
+        'modularity, alongside the use of HashMaps for rapid image data retrieval, ensuring both scalability and ' +
+        "robustness in its design. Additionally, extensive JUnit tests confirm the application's functionality, " +
+        'guaranteeing the dependability and accuracy of its image editing capabilities and data management processes.',
     image:
             'https://raw.githubusercontent.com/nancyonyejiaka/photoshop-gui/main/GUI%20screenshot.png',
     tags: [

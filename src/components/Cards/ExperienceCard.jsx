@@ -48,7 +48,7 @@ const Card = styled.div`
   border: 0.1px solid ${({ theme }) => theme.primary};
 
   &:hover {
-    box-shadow: ${({ theme }) => theme.primary} 0px 4px 24px;
+    box-shadow: ${({ theme }) => theme.button} 0px 4px 24px;
     transform: translateY(-5px);
   }
 

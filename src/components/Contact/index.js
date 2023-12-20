@@ -62,7 +62,7 @@ const ContactForm = styled.form`
   background-color: ${({ theme }) => theme.card};
   padding: 32px;
   border-radius: 16px;
-  box-shadow: rgba(158, 228, 147, 0.4) 0px 4px 24px; /* Mint Green shadow color */
+  box-shadow: ${({ theme }) => theme.primary} 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
 `
@@ -106,10 +106,10 @@ export const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(180, 40%, 70%, 1); 
-  background: linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%); 
-  background: -moz-linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(150, 40%, 80%, 1) 0%, hsla(120, 23%, 15%, 1) 100%);
+  background: ${({ theme }) => theme.button} ; 
+  background: linear-gradient(225deg, ${({ theme }) => theme.primary}  0%, ${({ theme }) => theme.bgLight} 100%); 
+  background: -moz-linear-gradient(225deg, ${({ theme }) => theme.primary} 0%, ${({ theme }) => theme.bgLight} 100%);
+  background: -webkit-linear-gradient(225deg, ${({ theme }) => theme.primary} 0%, ${({ theme }) => theme.bgLight} 100%);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
@@ -118,12 +118,13 @@ export const ContactButton = styled.input`
   font-size: 18px;
   font-weight: 600;
 
-  &:hover {
-    transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
-    filter: brightness(1);
-  }
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.4s ease-in-out;
+        background: ${({ theme }) => theme.button};
+        box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
+        filter: brightness(1);
+    }
 `
 
 const Contact = () => {

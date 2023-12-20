@@ -36,7 +36,7 @@ text-overflow: ellipsis;
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: rgba(158, 228, 147, 0.4) 0px 4px 24px; /* Adjusted shadow color */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -45,10 +45,10 @@ const Card = styled.div`
   flex-direction: column;
   gap: 12px;
   transition: all 0.3s ease-in-out;
-  border: 0.1px solid #9EE493; /* Mint Green border color */
+  border: 0.1px solid ${({ theme }) => theme.primary};
 
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: ${({ theme }) => theme.button} 0px 4px 24px;
     transform: translateY(-5px);
   }
 

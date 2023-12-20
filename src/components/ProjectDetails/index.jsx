@@ -232,6 +232,11 @@ const index = ({openModal, setOpenModal}) => {
                             <Button href={project.github} target='new'>View Code</Button>
                         </ButtonGroup>
                     )}
+                    {project?.report && (
+                        <ButtonGroup>
+                            <Button href={project.report} target='new'>View Report</Button>
+                        </ButtonGroup>
+                    )}
                 </Wrapper>
             </Container>
         </Modal>

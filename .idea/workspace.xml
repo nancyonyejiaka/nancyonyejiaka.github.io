@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e1d0061-5ae9-46f7-afa6-dbb415557c46" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/AboutStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AboutStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cards/EducationCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/EducationCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cards/ExperienceCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ExperienceCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/ProjectCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ProjectCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Education/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Education/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Experience/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroBGAnimation/HeroBGAnimationStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroBGAnimation/HeroBGAnimationStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroSection/HeroStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/HeroStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBarStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectDetails/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectDetails/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/ProjectsStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/ProjectsStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Skills/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Skills/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/defaults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/defaults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Themes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Themes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +94,7 @@
       <workItem from="1703028673033" duration="1090000" />
       <workItem from="1703031444767" duration="304000" />
       <workItem from="1703032500820" duration="255000" />
-      <workItem from="1703032879612" duration="12794000" />
+      <workItem from="1703032879612" duration="16763000" />
     </task>
     <servers />
   </component>

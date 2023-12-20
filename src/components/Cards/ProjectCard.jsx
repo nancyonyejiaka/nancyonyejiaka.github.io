@@ -21,7 +21,7 @@ const Card = styled.div`
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(158, 228, 147, 0.4); /* Mint Green shadow color */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
@@ -31,7 +31,7 @@ const Card = styled.div`
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: ${({ theme }) => theme.button} 0px 4px 24px;
     filter: brightness(1.1);
   }
 
@@ -45,7 +45,7 @@ const Image = styled.img`
   height: 180px;
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
-  box-shadow: 0 0 16px 2px rgba(158, 228, 147, 0.3); /* Mint Green shadow color */
+  box-shadow: ${({ theme }) => theme.card_light} 0px 4px 24px;
 `
 
 const Tags = styled.div`
@@ -120,7 +120,7 @@ const Avatar = styled.img`
   border-radius: 50%;
   margin-left: -10px;
   background-color: ${({ theme }) => theme.white};
-  box-shadow: 0 0 10px rgba(158, 228, 147, 0.2); /* Mint Green shadow color */
+  box-shadow: ${({ theme }) => theme.card_light} 0px 4px 24px;
   border: 3px solid ${({ theme }) => theme.card};
 `
 
