@@ -1,0 +1,83 @@
+# Nancy Onyejiaka — Software Engineer
+
+> This file provides structured context about this website and its owner for LLMs and AI agents.
+
+## About
+
+Nancy Onyejiaka is a software engineer who designs and scales systems handling millions of records with production-grade reliability. She bridges backend, data, and AI to deliver high-performance, reliable products at scale — from architecture through deployment.
+
+## Current Role
+
+Algorithmic Traffic Acquisition Engineer II at CarGurus, Boston, MA. Building vehicle recommendation systems at scale. Primary language: Kotlin. Cloud: AWS. Infrastructure: Terraform.
+
+## Experience
+
+- Algorithmic Traffic Acquisition Engineer II, CarGurus (Apr 2024 – Present)
+- Algorithmic Traffic Acquisition Engineer I, CarGurus (Jun 2023 – Apr 2024)
+- Software Engineering Co-op, Algorithmic Traffic Acquisition, CarGurus (Aug 2022 – Jun 2023)
+- Software Engineering Fellow, Hack.Diversity (Jan 2023 – Apr 2023)
+
+## Education
+
+Northeastern University, Boston, MA
+- M.S. Computer Science, May 2025, magna cum laude
+- B.S. Computer Science and Behavioral Neuroscience, Minor in Biology, May 2024, cum laude
+  - Honors Program, Dean's List: Fall 2020 – Fall 2023
+
+## Currently Building
+
+Recommendation Engine MCP — a Model Context Protocol server that exposes a vehicle recommendation engine as tools and resources for AI agents.
+
+## Key Projects
+
+### Recommendation Engine MCP (In Progress)
+MCP server enabling AI agents to query recommendation strategies, construct valid payloads, and inspect live A/B test configurations.
+Stack: Kotlin, MCP, Claude, http4k, PostgreSQL
+
+### Vibes Recommender
+AI-powered recommendation system using Claude via AWS Bedrock to classify vehicles into semantic categories, encoded as 6D vectors for HNSW KNN search across 11M+ listings. Production latency: 80-115ms.
+Stack: Kotlin, AWS Bedrock, Claude, Lucene HNSW, PostgreSQL
+
+### GRID
+Full-stack internal platform for testing recommendation engines with three modes: raw JSON, schema-driven forms, and AI-powered natural language queries (Quorra/Claude + OpenAI).
+Stack: SvelteKit, Kotlin, Terraform, Claude, OpenAI, AWS Lambda
+
+### Stardate
+Multi-region job orchestration platform with automatic retry, Sentry monitoring, and a React operations console. Eliminated recurring production incidents from duplicate job launches.
+Stack: Kotlin, AWS Batch, Terraform, Sentry, React
+
+### filter/v2 Recommendation DSL
+Evolved a recommendation API into a fully configurable DSL with conditional execution predicates, synthetic persona support, fit scoring, and user history filtering.
+Stack: Kotlin, PostgreSQL, Lucene, http4k
+
+### Persona-Listing Binary Matching Engine (Patent Pending)
+Replaced O(n*m) comparison with bitwise BigInteger encoding for single-operation matching. Runtime improved from 24 hours to 20 minutes (72x improvement).
+Stack: Kotlin, BigInteger, Caffeine Cache, PostgreSQL
+
+## Research
+
+### Automatic Code Refactoring with Large Language Models (Master's Project)
+Engineered a dynamic JavaScript "ground truth" repository for code quality analysis, integrating Gemini API for AI-driven code smell detection and refactoring. Contributed to the design of an interactive AI-assisted code review tool for teaching assistants.
+
+### AI in Poker: Decision-Making Using Search Algorithms
+Developed three AI algorithms in Python (Expectiminimax, Monte Carlo Tree Search, Deep Q-Learning) for Texas Hold'em poker, outperforming standard bots in stochastic game environments.
+
+## Technical Skills
+
+Languages: Kotlin, Java, Python, TypeScript, JavaScript, Svelte, Ruby
+Infrastructure: AWS (Bedrock, Batch, Lambda, S3, DynamoDB, IAM, SSM, Route53, CloudWatch), Terraform, TeamCity, Docker
+AI/ML: Claude Code, OpenAI API, Gemini, AWS Bedrock
+Data: PostgreSQL, MySQL, MongoDB, Apache Lucene, Redis, Flyway, Ktorm
+Frameworks: SvelteKit, Node.js, http4k, Koin, Gradle, JUnit 5, Git, Sentry
+
+## Contact
+
+- Email: nancy@example.com
+- LinkedIn: https://linkedin.com/in/nonyejiaka
+
+## Site Info
+
+- Framework: Next.js 16 (App Router)
+- Styling: Tailwind CSS v4
+- Hosting: GitHub Pages (static export)
+- Source: Single-page scroll architecture with hash-based navigation

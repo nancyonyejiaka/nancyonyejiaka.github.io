@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F7F1FB;
+  --foreground: #2E2A33;
+  --muted: #5c5662;
+  --accent: #FF76C7;
+  --accent-hover: #e85eb0;
+  --accent-light: #fff0f8;
+  --keyword: #B580F2;
+  --string: #6CD4FF;
+  --function: #9AE8C9;
+  --card-bg: #ffffff;
+  --card-border: #e8dff0;
+  --section-alt: #f0e9f5;
+  --divider: #ddd4e8;
+}
+
+.dark {
+  --background: #232136;
+  --foreground: #F2EFFF;
+  --muted: #a9a1b8;
+  --accent: #FF76C7;
+  --accent-hover: #ff9dd8;
+  --accent-light: #3a2d4a;
+  --keyword: #B580F2;
+  --string: #6CD4FF;
+  --function: #9AE8C9;
+  --card-bg: #2a2740;
+  --card-border: #3d3856;
+  --section-alt: #2a2545;
+  --divider: #3d3856;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-section-alt: var(--section-alt);
+  --color-divider: var(--divider);
+  --font-sans: var(--font-satoshi);
+  --font-mono: var(--font-fira);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  font-size: clamp(16px, 1vw + 14px, 20px);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+  position: relative;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-fira), ui-monospace, monospace;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+a[href="#contact"],
+a[href="#projects"],
+a[href="mailto:nancy@example.com"],
+nav a,
+button {
+  font-family: var(--font-fira), ui-monospace, monospace;
+  font-feature-settings: "liga" 1, "calt" 1;
+  letter-spacing: -0.01em;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+
+.section-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.editorial-rule {
+  width: 3rem;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
