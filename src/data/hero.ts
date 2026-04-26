@@ -27,6 +27,6 @@ export const heroSlides: HeroSlide[] = [
 ];
 
 export const heroSubtitle =
-	"I turn complex ideas into production systems—bridging backend, data, and AI to deliver high-performance, reliable products at scale, from architecture through deployment.";
+	"I turn complex ideas into production systems, bridging backend, data, and AI to deliver high-performance, reliable products at scale, from architecture through deployment.";
 
 export const resumeUrl = "/papers/resume.pdf";
