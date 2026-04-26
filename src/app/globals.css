@@ -76,14 +76,21 @@ code, pre, .font-mono {
   font-feature-settings: "liga" 1, "calt" 1;
 }
 
-a[href="#contact"],
-a[href="#projects"],
-a[href="mailto:nancy@example.com"],
-nav a,
 button {
   font-family: var(--font-fira), ui-monospace, monospace;
   font-feature-settings: "liga" 1, "calt" 1;
   letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+  nav a,
+  a[href="#contact"],
+  a[href="#projects"],
+  a[href="mailto:nancy@example.com"] {
+    font-family: var(--font-fira), ui-monospace, monospace;
+    font-feature-settings: "liga" 1, "calt" 1;
+    letter-spacing: -0.01em;
+  }
 }
 
 section {
