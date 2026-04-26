@@ -127,14 +127,14 @@ export default function Header() {
       </nav>
 
       {menuOpen && (
-        <div id="mobile-nav" className="md:hidden border-t border-[var(--card-border)] bg-[var(--background)]">
+        <div id="mobile-nav" className="md:hidden border-t border-[var(--card-border)] bg-[var(--background)] font-[family-name:var(--font-fira)]">
           <ul className="px-6 py-4 space-y-3">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={(e) => { scrollToSection(e, link.href); setMenuOpen(false); }}
-                  className="block font-[family-name:var(--font-satoshi)] text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-200 text-base font-medium"
+                  className="block text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-200 text-base font-medium"
                 >
                   {link.label}
                 </a>
