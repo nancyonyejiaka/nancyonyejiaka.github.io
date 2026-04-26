@@ -15,11 +15,11 @@ export const projects: ProjectData[] = [
 		slug: "reco-mcp",
 		stack: ["Kotlin", "MCP", "Claude", "http4k", "PostgreSQL"],
 		problem:
-			"No programmatic interface existed for interacting with the recommendation engine—developers and AI agents relied on source code exploration or tribal knowledge to discover endpoints, parameters, and system state.",
+			"Developers and AI agents had no programmatic way to interact with the recommendation engine.",
 		approach:
-			"I am building a Model Context Protocol (MCP) server that exposes the recommendation engine as structured tools and resources. This enables AI agents to query strategies, construct valid filter/v2 payloads, inspect live A/B configurations, and retrieve listing metadata through a unified interface.",
+			"Building an MCP server that exposes the engine as structured tools, letting AI agents query strategies, construct payloads, and inspect live configurations.",
 		impact:
-			"In progress—establishes the foundation for AI-native development workflows, enabling agents like Claude to autonomously debug, test, and iterate on recommendation logic.",
+			"Establishes the foundation for AI-native development workflows where agents autonomously debug and iterate on recommendation logic.",
 		active: true,
 	},
 	{
@@ -27,11 +27,11 @@ export const projects: ProjectData[] = [
 		slug: "vibes-recommender",
 		stack: ["Kotlin", "AWS Bedrock", "Claude", "Lucene HNSW", "PostgreSQL"],
 		problem:
-			"Attribute-based recommendations failed to capture semantic similarity—users browsing a vehicle were limited to near-identical listings rather than meaningful alternatives.",
+			"Attribute-based recommendations only surfaced near-identical listings, missing meaningful alternatives.",
 		approach:
-			"I designed a semantic recommendation system using Claude via AWS Bedrock to classify vehicles across multiple dimensions, encoding each into a 6D vector space. These vectors are indexed in an in-memory Lucene HNSW graph for sub-millisecond nearest-neighbor retrieval across tens of millions of listings.",
+			"Used Claude to classify vehicles into semantic dimensions, encoded as vectors and indexed for sub-millisecond nearest-neighbor retrieval.",
 		impact:
-			"Delivered 80–115ms production latency with 100% Bedrock call success. Generated hundreds of thousands of semantic clusters across tens of millions listings, enabling cross-make and cross-model recommendations beyond traditional filtering.",
+			"80–115ms production latency across tens of millions of listings. Enabled cross-make and cross-model recommendations beyond traditional filtering.",
 	},
 	{
 		title: "GRID: Graphical Recommendation Interface and Designer",
@@ -45,33 +45,33 @@ export const projects: ProjectData[] = [
 			"AWS Lambda",
 		],
 		problem:
-			"Testing recommendation logic required manual curl requests and raw JSON payloads—slow, error-prone, and inaccessible to non-engineering stakeholders.",
+			"Testing recommendations required manual curl requests and raw JSON, which was slow and inaccessible to non-engineers.",
 		approach:
-			"I built a full-stack internal platform with three interaction modes: raw JSON editing with validation, a schema-driven form builder, and an AI interface (Quorra) that translates natural language into valid filter/v2 requests. The system is backed by a live schema service and deployed via Terraform-managed infrastructure.",
+			"Built an internal platform with form-based, raw JSON, and AI-powered natural language interfaces for constructing recommendation queries.",
 		impact:
-			"Adopted as the primary tool for recommendation testing and debugging. Reduced iteration time from minutes to seconds and enabled non-engineers to construct valid queries independently.",
+			"Became the primary testing and debugging tool. Reduced iteration from minutes to seconds and opened access to non-engineering stakeholders.",
 	},
 	{
 		title: "Stardate Distributed Job System",
 		slug: "stardate",
 		stack: ["Kotlin", "AWS Batch", "Terraform", "Sentry", "React"],
 		problem:
-			"Batch jobs ran on unreliable cron infrastructure with no retries, monitoring, or execution guarantees—resulting in duplicate runs, data corruption, and frequent production incidents.",
+			"Unreliable cron infrastructure caused duplicate runs, data corruption, and frequent production incidents.",
 		approach:
-			"I designed and implemented a multi-region job orchestration platform with retry policies, exponential backoff, and Sentry-based monitoring. The system enforces single-instance execution with configurable concurrency and provides a React-based operations console.",
+			"Built a multi-region job orchestration platform with retries, monitoring, and a React operations console.",
 		impact:
-			"Eliminated duplicate job incidents and stabilized batch processing. Gave operations full visibility into job health across regions, replacing manual SSH-based workflows.",
+			"Eliminated duplicate job incidents and replaced manual SSH workflows with full operational visibility across regions.",
 	},
 	{
-		title: "filter/v2 Recommendation DSL",
+		title: "Recommendation DSL",
 		slug: "filter-v2",
 		stack: ["Kotlin", "PostgreSQL", "Lucene", "http4k"],
 		problem:
-			"Defining complex recommendation logic required engineering changes, creating bottlenecks for product and personalization teams.",
+			"Defining recommendation logic required engineering changes, bottlenecking product and personalization teams.",
 		approach:
-			"I evolved the filter/v2 API into a fully configurable DSL with predicate-based execution, quantifier logic, synthetic personas, and user history filtering. The evaluator parses and executes expressions dynamically at runtime.",
+			"Designed a configurable DSL that parses and executes recommendation strategies dynamically at runtime.",
 		impact:
-			"Enabled teams to define and deploy recommendation strategies without code changes, reducing turnaround from days to minutes. Backed by comprehensive testing suites covering all operators and field types.",
+			"Teams deploy recommendation strategies without code changes. Turnaround dropped from days to minutes.",
 	},
 	{
 		title: "Persona-Listing Binary Matching Engine",
@@ -79,10 +79,10 @@ export const projects: ProjectData[] = [
 		stack: ["Kotlin", "BigInteger", "Caffeine Cache", "PostgreSQL"],
 		badge: "Patent Pending",
 		problem:
-			"Matching millions of listings against thousands of personas required O(n×m) comparisons, resulting in 24-hour runtimes—too slow for daily inventory updates.",
+			"Matching millions of listings against thousands of personas took 24 hours, too slow for daily updates.",
 		approach:
-			"I replaced iterative matching with a bitwise encoding strategy, representing listings and personas as BigIntegers and reducing matching to a single operation using bitwise logic. Cached representations further optimized repeated evaluations.",
+			"Replaced iterative comparisons with bitwise encoding, reducing each match to a single operation.",
 		impact:
-			"Reduced runtime from 24 hours to ~20 minutes (72x improvement), enabling multiple daily inventory refreshes and significantly increasing system responsiveness.",
+			"72x faster: 24 hours down to ~20 minutes, enabling multiple daily inventory refreshes.",
 	},
 ];
