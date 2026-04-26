@@ -134,7 +134,7 @@ export default function Header() {
                 <a
                   href={link.href}
                   onClick={(e) => { scrollToSection(e, link.href); setMenuOpen(false); }}
-                  className="block text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-200 text-base font-medium"
+                  className="block font-[family-name:var(--font-satoshi)] text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-200 text-base font-medium"
                 >
                   {link.label}
                 </a>
